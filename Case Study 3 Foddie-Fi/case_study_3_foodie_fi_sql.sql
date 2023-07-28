@@ -33,7 +33,7 @@ SELECT COUNT(DISTINCT customer_id) AS 'total_customers' FROM details;
 
 -- Q2. What is the monthly distribution of trial plan start_date values for our dataset - use the start of the month as the group by value
 -- SOLUTION - 
-SELECT MONTH(start_date) AS 'month',MONTHNAME(start_date) AS 'month_name',COUNT(DISTINCT customer_id) AS 'monthly_dsitribution' FROM details
+SELECT MONTH(start_date) AS 'month',MONTHNAME(start_date) AS 'month_name',COUNT(DISTINCT customer_id) AS 'monthly_distribution' FROM details
 WHERE plan_id=0 GROUP BY 1,2 ORDER BY 1,2 ;
 
 
@@ -138,6 +138,7 @@ SELECT COUNT(DISTINCT customer_id) AS 'downgraded_from_pro_to_basic_monthly_2020
 FROM cte 
 WHERE plan_id=1 AND rk=1 AND cnt=2;
 
+
 --                                                      C. Challenge Payment Question
 -- The Foodie-Fi team wants you to create a new payments table for the year 2020 that includes amounts paid by each customer in the subscriptions 
 -- table with the following requirements:
@@ -201,4 +202,3 @@ ROW_NUMBER() OVER (PARTITION BY customer_id) AS payment_ord
 FROM cte 
 WHERE  YEAR(payment_date)=2020 AND DATEDIFF(end_date,payment_date)>=0 AND plan_id<>4
 ORDER BY customer_id;
-
