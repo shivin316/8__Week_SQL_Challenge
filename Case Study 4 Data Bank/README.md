@@ -1,5 +1,5 @@
 <p align='center'>
-<img src = "https://github.com/shivin316/8_Week_SQL_Challenge/assets/122541994/435ce4d1-4c94-48a2-b41f-450449a3c195" width='500'>
+<img src = "https://github.com/shivin316/8__Week_SQL_Challenge/assets/122541994/c4dc8a4e-b748-4085-91de-dc6cd3087bdc" width='500'>
 </p>
 
 
@@ -27,7 +27,9 @@ This case study is all about calculating metrics, growth and helping the busines
 
 - <h1>Entity Relationship Diagram</h1>
 
-![image](https://github.com/shivin316/8_Week_SQL_Challenge/assets/122541994/cdbab12b-301f-4d59-8d5f-0053abc693af)
+![image](https://github.com/shivin316/8__Week_SQL_Challenge/assets/122541994/de1a5772-dee5-4ba2-8dcd-cfca0a1fcca1)
+
+
 
 <h1>DBMS used</h1>
 
