@@ -348,5 +348,5 @@ FROM cte1 WHERE month_year BETWEEN '2018-09-01' AND '2019-08-01';
 
 
 
--- Provide a possible reason why the max average composition might change from month to month? Could it signal something is not quite right with the overall business model for Fresh Segments?
+-- Q5. Provide a possible reason why the max average composition might change from month to month? Could it signal something is not quite right with the overall business model for Fresh Segments?
 -- Seasonal changes could be the reason
