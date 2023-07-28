@@ -4,7 +4,8 @@
 INSERT INTO pizza_names VALUES(3, 'Supreme');
 SELECT * FROM pizza_names;
 ```
-![image](https://github.com/shivin316/8_Week_SQL_Challenge/assets/122541994/27f235fb-bd26-47ee-bf95-77832288bfeb)
+![image](https://github.com/shivin316/8__Week_SQL_Challenge/assets/122541994/844829ae-bca3-42c8-ae93-9fa3fc087a5a)
+
 
 ```sql
 INSERT INTO pizza_recipes
@@ -12,4 +13,5 @@ VALUES(3, (SELECT GROUP_CONCAT(topping_id SEPARATOR ', ') FROM pizza_toppings));
 
 SELECT * FROM pizza_recipes;
 ```
-![image](https://github.com/shivin316/8_Week_SQL_Challenge/assets/122541994/3323548d-c065-4520-b0ca-a036b6d7266c)
+![image](https://github.com/shivin316/8__Week_SQL_Challenge/assets/122541994/bbdb25a0-026b-4e92-8c6d-f122b5cdaa20)
+
