@@ -1,8 +1,9 @@
 <p align="center">
-<img src="https://github.com/shivin316/8_Week_SQL_Challenge/assets/122541994/df5d1423-613a-43de-9b67-cc8a6ab1a9dc" width="500">
+<img src="https://github.com/shivin316/8__Week_SQL_Challenge/assets/122541994/8aca82c3-b509-43b0-b461-ec5d21e2fc3a" width="500">
 </p>
 
 <h1>Introduction</h1>
+![cs1]()
 
 Danny seriously loves Japanese food so in the beginning of 2021, he decides to embark upon a risky venture and opens up a cute little restaurant that sells his 3 favourite foods: sushi, curry and ramen.
 
@@ -24,7 +25,8 @@ Three key datasets for this case study
 
 <h1>Entity Relationship Diagram </h1>
 
-![ERD1](https://github.com/shivin316/8_Week_SQL_Challenge/assets/122541994/8ea97ae3-e4a2-47bf-9b75-95f232be4ec9)
+![ERD1](https://github.com/shivin316/8__Week_SQL_Challenge/assets/122541994/eaf489c0-c42a-4a24-b8c1-47a997ae7d4b)
+
 
 <h1>DBMS used</h1>
 
