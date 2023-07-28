@@ -1,5 +1,5 @@
 <p align='center'>
-<img src ="https://github.com/shivin316/8_Week_SQL_Challenge/assets/122541994/76c8011d-5376-4326-bb3b-96a2d7bf5409" width='500'>
+<img src ="https://github.com/shivin316/8__Week_SQL_Challenge/assets/122541994/e74bf0f6-2d7c-4e96-afee-e3fe82d8873a" width='500'>
 </p>
 
 <h1>Introduction</h1>
@@ -49,7 +49,7 @@ Danny started by recruiting “runners” to deliver fresh pizza from Pizza Runn
  
 <h1>Entity Relationship Diagram</h1>
 
-![image](https://github.com/shivin316/8_Week_SQL_Challenge/assets/122541994/0551608d-b2d3-4de7-9801-2a570f7cd944)
+![image](https://github.com/shivin316/8__Week_SQL_Challenge/assets/122541994/ddb835b6-0afa-4e40-9f6e-6dc98391562c)
 
 <h1>DBMS used</h1>
 
