@@ -1,5 +1,5 @@
 <p align = 'center'>
-<img src ="https://github.com/shivin316/8_Week_SQL_Challenge/assets/122541994/3f0be529-6467-4619-8b9e-c6d2edc72f0f" width='500'>
+<img src ="https://github.com/shivin316/8__Week_SQL_Challenge/assets/122541994/0c0c88bb-b786-4171-973f-b4d6298b3d2c" width='500'>
 </p>
 
 <h1>Introduction</h1>
@@ -21,7 +21,7 @@ For this case study there is a total of 4 datasets for this case study - however
 
 <h1>Entity Relationship Diagram</h1>
 
-![ERD7](https://github.com/shivin316/8_Week_SQL_Challenge/assets/122541994/4c61f653-b3e5-46e3-a94d-8707b412f877)
+![image](https://github.com/shivin316/8__Week_SQL_Challenge/assets/122541994/4ccf3665-5249-459e-b2af-58e8748af0bd)
 
 <h1>DBMS used</h1>
 
