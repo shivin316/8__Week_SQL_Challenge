@@ -137,7 +137,7 @@ FROM four_week_before b JOIN four_week_after a ON b.base_week=a.base_week;
 
 
 
--- What about the entire 12 weeks before and after?
+--Q2. What about the entire 12 weeks before and after?
 -- SOLUTION - 
 WITH twelve_week_before AS (
 SELECT '2020-06-15' AS base_week,SUM(sales) AS sales_twelve_week_before
@@ -159,7 +159,7 @@ ROUND(100*(a.sales_twelve_week_after-b.sales_twelve_week_before)/(b.sales_twelve
 FROM twelve_week_before b JOIN twelve_week_after a ON b.base_week=a.base_week;
 
 
--- How do the sale metrics for these 2 periods before and after compare with the previous years in 2018 and 2019?
+--Q3. How do the sale metrics for these 2 periods before and after compare with the previous years in 2018 and 2019?
 -- SOLUTION 
 WITH four_week_before_2020 AS (
 SELECT '2020-06-15' AS base_week,SUM(sales) AS sales_four_week_before
@@ -249,9 +249,3 @@ AND b.age_band = a.age_band
 AND b.demographics = a.demographics
 AND b.customer_type = a.customer_type
 ORDER BY a.sales_twelve_week_after-b.sales_twelve_week_before;
-
-
-
-
-
-
