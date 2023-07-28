@@ -1,5 +1,5 @@
 <p align ='center'>
-<img src ="https://github.com/shivin316/8_Week_SQL_Challenge/assets/122541994/fdad7045-851f-4ac7-ab8f-380a8bc55dde" width='500'>
+<img src ="https://github.com/shivin316/8__Week_SQL_Challenge/assets/122541994/ce913542-7bb4-405f-bcf3-977e01144917" width='500'>
 </p>
 
 
@@ -37,7 +37,7 @@ Additional Details about the Dataset:
 
 <h1>Entity Relationship Diagram</h1>
 
-![image](https://github.com/shivin316/8_Week_SQL_Challenge/assets/122541994/255ab030-de9f-4ab6-9ba2-84191a757b15)
+![image](https://github.com/shivin316/8__Week_SQL_Challenge/assets/122541994/e0e341a9-c2bf-4cb3-9125-22948718ced2)
 
 
 please note that there is only this one table - hence why it looks a little bit lonely!
