@@ -1,5 +1,5 @@
 <p align = 'center'>
-<img src = "https://github.com/shivin316/8_Week_SQL_Challenge/assets/122541994/dee485d2-6074-4fb8-808c-924f794dfa64" width='500'>
+<img src = "https://github.com/shivin316/8__Week_SQL_Challenge/assets/122541994/addccdb1-9833-45ed-b281-9f2358f2307e" width='500'>
 </p>
 
 <h1>Introduction</h1>
@@ -26,7 +26,8 @@ This mapping table links the interest_id with their relevant interest informatio
 
 <h1>Entity Relationship Diagram</h1>
 
-![ERD8](https://github.com/shivin316/8_Week_SQL_Challenge/assets/122541994/904a4300-da5b-43ee-ab26-6bda69918223)
+![image](https://github.com/shivin316/8__Week_SQL_Challenge/assets/122541994/39943559-5d99-4658-bb59-c649382d783b)
+
 
 <h1>DBMS used</h1>
 
