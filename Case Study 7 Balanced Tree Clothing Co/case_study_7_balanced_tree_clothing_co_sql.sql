@@ -53,8 +53,8 @@ FROM sales GROUP BY 1)x;
 --Q5. What is the percentage split of all transactions for members vs non-members?
 -- SOLUTION -
 WITH cte AS (
-SELECT DISTINCT txn_id,
-CASE WHEN member is True THEN 'Member' ELSE 'Non-member' END AS member_status
+SELECT DISTINCT txn_id
+CASE WHEN member iS True THEN 'Member' ELSE 'Non-member' END AS member_status
 FROM
 sales
 ),
@@ -84,7 +84,7 @@ SELECT member_status,ROUND(total_revenue/cnt::NUMERIC,2) AS average_revenue FROM
 
                                              -- Product Analysis
 --Q1. What are the top 3 products by total revenue before discount?
--- SOLUTION - 
+-- SLUTION - 
 SELECT p.product_name,SUM((s.qty*s.price)) AS pre_discount_revenue FROM sales s
 JOIN product_details p ON s.prod_id=p.product_id
 GROUP BY 1 ORDER BY 2 DESC LIMIT 3;
