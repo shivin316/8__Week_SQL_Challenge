@@ -4,7 +4,7 @@
 SELECT txn_type,COUNT( DISTINCT customer_id) AS 'unique_count',SUM(txn_amount) AS 'total_amount'
 FROM customer_transactions GROUP BY 1;
 ```
-![image](https://github.com/shivin316/8_Week_SQL_Challenge/assets/122541994/92256d11-9d59-450a-8245-3327d54a155c)
+![image](https://github.com/shivin316/8__Week_SQL_Challenge/assets/122541994/7542c0bf-a2ee-49ff-a29b-332cf8fee290)
 
 #### 2. What is the average total historical deposit counts and amounts for all customers?
 ```sql
@@ -17,7 +17,8 @@ GROUP BY customer_id
 SELECT ROUND(AVG(txn_count)) AS avg_deposit_count,ROUND(AVG(avg_amount)) AS 'avg_deposit_amt'
 FROM cte;
 ```
-![image](https://github.com/shivin316/8_Week_SQL_Challenge/assets/122541994/89911bd7-8962-4a30-96ad-0d758c31c138)
+![image](https://github.com/shivin316/8__Week_SQL_Challenge/assets/122541994/790ce73b-4b90-413b-bd3c-bd8caafd14e4)
+
 
 #### 3. For each month - how many Data Bank customers make more than 1 deposit and either 1 purchase or 1 withdrawal in a single month?
 ```sql
@@ -31,7 +32,9 @@ SELECT c1.mth,COUNT(DISTINCT c1.customer_id) AS 'n-customers'
 FROM cte1 c1 JOIN cte c ON c1.customer_id=c.customer_id AND c.txn_type<>'deposit' AND c1.mth=c.mth
 GROUP BY 1;
 ```
-![image](https://github.com/shivin316/8_Week_SQL_Challenge/assets/122541994/9cea2558-cad6-4559-88da-5bd66d296f9d)
+![image](https://github.com/shivin316/8__Week_SQL_Challenge/assets/122541994/7a6b72f2-691e-4b5d-9b88-389b658f8d5f)
+
+
 
 #### 4. What is the closing balance for each customer at the end of the month?
 ```sql
@@ -43,7 +46,8 @@ GROUP BY customer_id,MONTH(txn_date) ORDER BY 1 );
 ```
 **NOT ALL ROWS ARE DISPLAYED**
 
-![image](https://github.com/shivin316/8_Week_SQL_Challenge/assets/122541994/d4d21598-c084-4c67-b54f-57219eeba1d5)
+![image](https://github.com/shivin316/8__Week_SQL_Challenge/assets/122541994/1287acca-bdbb-4038-8f69-c1c89ec59b47)
+
 
 ```sql
 CREATE TEMPORARY TABLE removed_amount AS 
@@ -55,7 +59,8 @@ GROUP BY customer_id,MONTH(txn_date) ORDER BY 1
 ```
 **NOT ALL ROWS ARE DISPLAYED**
 
-![image](https://github.com/shivin316/8_Week_SQL_Challenge/assets/122541994/48b9688c-76da-44ae-850d-ba381b2f5f74)
+![image](https://github.com/shivin316/8__Week_SQL_Challenge/assets/122541994/f74b71ec-9c15-420a-91bb-d6034a68ccd2)
+
 
 ```sql
 WITH RECURSIVE cte AS (
@@ -72,7 +77,8 @@ ORDER BY 1,2;
 ```
 **NOT ALL ROWS ARE DISPLAYED**
 
-![image](https://github.com/shivin316/8_Week_SQL_Challenge/assets/122541994/a7f36704-1f43-40bc-9920-ed12df482f32)
+![image](https://github.com/shivin316/8__Week_SQL_Challenge/assets/122541994/1e2fd316-6f89-4786-bcb7-b4e108048264)
+
 
 #### 5. What is the percentage of customers who increase their closing balance by more than 5%?
 ```sql
@@ -95,4 +101,5 @@ SELECT ROUND(100*COUNT(DISTINCT increase_by_5)/(SELECT COUNT(DISTINCT customer_i
 FROM cte2 WHERE increase_by_5>5;
 
 ```
-![image](https://github.com/shivin316/8_Week_SQL_Challenge/assets/122541994/c9d56b35-d93c-4c79-bef5-737b02223d32)
+![image](https://github.com/shivin316/8__Week_SQL_Challenge/assets/122541994/74949347-a36f-4a22-a2b3-93a4986e8948)
+
