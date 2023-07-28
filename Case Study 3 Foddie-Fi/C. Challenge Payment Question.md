@@ -16,7 +16,8 @@ JOIN PLANS AS p ON p.plan_id = s.plan_id
 ```
 **NOT ALL ROWS ARE DISPLAYED**
 
-![image](https://github.com/shivin316/8_Week_SQL_Challenge/assets/122541994/4dd8c5dd-ebfd-4a0d-8da5-8f68d75de54c)
+![image](https://github.com/shivin316/8__Week_SQL_Challenge/assets/122541994/8caa889b-5ed8-4345-ba5c-98a4e0e3a60a)
+
 
 ```sql
 DROP TABLE IF EXISTS cust_pay;
@@ -34,7 +35,8 @@ AND start_date BETWEEN '2020-01-01' AND '2020-12-31');
 ```
 **NOT ALL ROWS ARE DISPLAYED**
 
-![image](https://github.com/shivin316/8_Week_SQL_Challenge/assets/122541994/59f01154-0112-4b29-81df-895ecca3df06)
+![image](https://github.com/shivin316/8__Week_SQL_Challenge/assets/122541994/3cd6fb0a-8008-4879-8f99-267752f0e61f)
+
 
 ```sql      
 DROP TABLE IF EXISTS one_more;
@@ -51,7 +53,8 @@ FROM cust_pay);
 ```
 **NOT ALL ROWS ARE DISPLAYED**
 
-![image](https://github.com/shivin316/8_Week_SQL_Challenge/assets/122541994/b10b24a2-2f57-483d-a90b-e1f04c74b46b)
+![image](https://github.com/shivin316/8__Week_SQL_Challenge/assets/122541994/f1498965-dcbc-4e7b-b6a8-84c775f4401f)
+
 
 ```sql
 WITH RECURSIVE cte AS (
@@ -76,4 +79,5 @@ ORDER BY customer_id;
 ```
 **NOT ALL ROWS ARE DISPLAYED**
 
-![image](https://github.com/shivin316/8_Week_SQL_Challenge/assets/122541994/ba84c0bf-861f-47a2-960d-c438896789fd)
+![image](https://github.com/shivin316/8__Week_SQL_Challenge/assets/122541994/90bd3cff-31b6-4e80-8a2a-aded41473a99)
+
