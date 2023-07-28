@@ -7,7 +7,7 @@ JOIN pizza_toppings pt ON pr.toppings=pt.topping_id
 JOIN pizza_names pn ON c.pizza_id=pn.pizza_id
 ORDER BY 1;
 ```
-![image](https://github.com/shivin316/8_Week_SQL_Challenge/assets/122541994/46d74f11-72fd-4570-b26c-66ba657ea2dc)
+![image](https://github.com/shivin316/8__Week_SQL_Challenge/assets/122541994/b282d7e9-cab3-44d8-86ef-6acd30119bd7)
 
 #### 2. What was the most commonly added extra?
 ```sql
@@ -17,7 +17,7 @@ GROUP BY 1 HAVING extras IS NOT NULL)
 SELECT topping_name FROM pizza_toppings
 WHERE topping_id = (SELECT extras FROM cte WHERE rk= 1);
 ```
-![image](https://github.com/shivin316/8_Week_SQL_Challenge/assets/122541994/f80f35ab-c1e3-4005-8daf-cc1039f1c088)
+![image](https://github.com/shivin316/8__Week_SQL_Challenge/assets/122541994/bd3f81f9-8fa7-401c-834c-e68e0466e1db)
 
 #### 3. What was the most common exclusion?
 ```sql
@@ -27,7 +27,7 @@ GROUP BY 1)
 SELECT topping_name FROM pizza_toppings
 WHERE topping_id = (SELECT exclusions FROM cte WHERE rk= 1);
 ```
-![image](https://github.com/shivin316/8_Week_SQL_Challenge/assets/122541994/c8383d42-fbbd-41ba-ab4d-c281048a7314)
+![image](https://github.com/shivin316/8__Week_SQL_Challenge/assets/122541994/f68b770a-cb60-4929-9185-936b9023b304)
 
 #### 4. Generate an order item for each record in the customers_orders table in the format of one of the following: Meat Lovers, Meat Lovers - Exclude Beef, Meat Lovers - Extra Bacon, Meat Lovers - Exclude Cheese, Bacon - Extra Mushroom, Peppers
 ```sql
@@ -53,7 +53,7 @@ WHEN exclusions IS NOT NULL AND extras IS NULL THEN CONCAT (pizza_name,' exclude
 WHEN exclusions IS NULL AND extras IS NOT NULL THEN CONCAT (pizza_name,' with extra ', extraname )
 ELSE NULL END AS 'order_item' FROM cte1;
 ```
-![image](https://github.com/shivin316/8_Week_SQL_Challenge/assets/122541994/d764e6ef-8f9e-4a1e-ae24-80d8a1cec137)
+![image](https://github.com/shivin316/8__Week_SQL_Challenge/assets/122541994/ba21881b-f8e2-4284-900f-5a2cab1eeab7)
 
 #### 5. Generate an alphabetically ordered comma separated ingredient list for each pizza order from the customer_orders table and add a 2x in front of any relevant ingredients
 ```sql
@@ -100,7 +100,7 @@ SELECT rn,order_id,customer_id,pizza_id,order_time,
 CONCAT(pizza_name,': ',GROUP_CONCAT(DISTINCT qty ORDER BY cnt DESC,topping_name SEPARATOR ',' ) )AS 'ingredients' 
 FROM cte1 GROUP BY rn,order_id,customer_id,pizza_id,pizza_name,order_time;
 ```
-![image](https://github.com/shivin316/8_Week_SQL_Challenge/assets/122541994/c9ec0791-9f57-4c82-a135-1fb1cf7e9baa)
+![image](https://github.com/shivin316/8__Week_SQL_Challenge/assets/122541994/05fd9a86-c3a6-44fb-9612-15b3cc4c98de)
 
 #### 6 . What is the total quantity of each ingredient used in all delivered pizzas sorted by most frequent first?
 ```sql
@@ -115,4 +115,5 @@ GROUP BY 1,2,4 HAVING cancellation IS NULL
 ORDER BY 3 DESC)
 SELECT topping_name,count FROM cte1;
 ```
-![image](https://github.com/shivin316/8_Week_SQL_Challenge/assets/122541994/38424156-0098-469e-b6bd-d4c849716400)
+![image](https://github.com/shivin316/8__Week_SQL_Challenge/assets/122541994/9886a5cb-2852-468d-b7d4-860a2fe27cd5)
+
