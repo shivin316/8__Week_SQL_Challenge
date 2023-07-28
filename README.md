@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://github.com/shivin316/8_Week_SQL_Challenge/assets/122541994/fd8734cf-96c9-4ad9-af5b-1335a898d9d5" width='100'>
+  <img src="https://user-images.githubusercontent.com/8__Week_SQL_Challenge/assets/122541994/fd8734cf-96c9-4ad9-af5b-1335a898d9d5" width='100'>
 </p>
 
 <h1>8_Week_SQL_Challenge</h1> 
