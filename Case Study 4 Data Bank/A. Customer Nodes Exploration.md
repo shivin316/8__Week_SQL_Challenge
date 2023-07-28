@@ -2,7 +2,8 @@
 ```sql
 SELECT COUNT(DISTINCT node_id) AS 'n_unique_nodes' FROM details;
 ```
-![image](https://github.com/shivin316/8_Week_SQL_Challenge/assets/122541994/97677f61-7eaa-416a-ad84-f6053219460b)
+![image](https://github.com/shivin316/8__Week_SQL_Challenge/assets/122541994/a5277a7f-4477-4de8-9165-f34983142740)
+
 
 #### 2. What is the number of nodes per region?
 ```sql
@@ -12,14 +13,16 @@ JOIN customer_nodes c ON r.region_id=c.region_id
 GROUP BY 1,2
 ORDER BY 1,2;
 ```
-![image](https://github.com/shivin316/8_Week_SQL_Challenge/assets/122541994/a8b64b4f-2fa6-4128-929d-2439351ac705)
+![image](https://github.com/shivin316/8__Week_SQL_Challenge/assets/122541994/e0a06bca-8e90-4b78-84d9-63a0b8a6cbcf)
+
 
 #### 3. How many customers are allocated to each region?
 ```sql
 SELECT region_id,region_name,COUNT(DISTINCT customer_id) AS 'n_customers' FROM details
 GROUP BY 1,2;
 ```
-![image](https://github.com/shivin316/8_Week_SQL_Challenge/assets/122541994/78af7029-79ed-4881-aea9-d557d9430848)
+![image](https://github.com/shivin316/8__Week_SQL_Challenge/assets/122541994/e2f593d0-7736-4023-ab0f-5480461897e1)
+
 
 #### 4. How many days on average are customers reallocated to a different node?
 ```sql
@@ -35,7 +38,8 @@ FROM cte
 )
 SELECT ROUND(AVG(diff)) AS 'average_reallocation_days' FROM cte1;
 ```
-![image](https://github.com/shivin316/8_Week_SQL_Challenge/assets/122541994/4f5e7c73-213b-4613-8d19-495e15e3211c)
+![image](https://github.com/shivin316/8__Week_SQL_Challenge/assets/122541994/675db4cc-8591-4386-a8ae-45d1fd993239)
+
 
 #### 5. What is the median, 80th and 95th percentile for this same reallocation days metric for each region?
 ```sql
@@ -59,4 +63,4 @@ SUM(CASE WHEN rn=ROUND(0.80*cnt) THEN diff ELSE 0 END) AS '80_percentile',
 SUM(CASE WHEN rn=ROUND(0.95*cnt) THEN diff ELSE 0 END) AS '95_percentile'
 FROM cte2 GROUP BY 1 ;
 ```
-![image](https://github.com/shivin316/8_Week_SQL_Challenge/assets/122541994/076be814-71c3-4c96-8dac-ae7016b304cc)
+![image](https://github.com/shivin316/8__Week_SQL_Challenge/assets/122541994/8e003f19-d055-4b82-8441-f08030c29f8d)
