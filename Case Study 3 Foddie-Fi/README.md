@@ -1,5 +1,5 @@
 <p align='center'>
-<img src="https://github.com/shivin316/8_Week_SQL_Challenge/assets/122541994/5b1f4530-025d-417b-925a-9f30ea570174" width='500'>
+<img src="https://github.com/shivin316/8__Week_SQL_Challenge/assets/122541994/73a5dea0-f354-4393-8b3e-3127e8d3a242" width='500'>
 </p>
 
 <h1>Introduction</h1>
@@ -31,7 +31,8 @@ Sure, here's the rephrased version in bullet points:
 
 - <h1>Entity Relationship Diagram</h1>
 
-![image](https://github.com/shivin316/8_Week_SQL_Challenge/assets/122541994/a44361ff-9155-4e54-a7c7-10665e3dae3b)
+![image](https://github.com/shivin316/8__Week_SQL_Challenge/assets/122541994/63ded15f-c771-4736-9fbf-6445e2cd0dce)
+
 
 <h1>DBMS used</h1>
 
