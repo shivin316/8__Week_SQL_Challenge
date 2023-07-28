@@ -3,14 +3,14 @@
 SELECT COUNT(pizza_id) AS 'Number_of_pizza_ordered'
 FROM customer_orders_new;
 ```
-![image](https://github.com/shivin316/8_Week_SQL_Challenge/assets/122541994/dbe617f4-74ef-4c1f-ad18-69ca6f686000)
+![image](https://github.com/shivin316/8__Week_SQL_Challenge/assets/122541994/a5e79e99-e551-4e6b-93df-09d8ebe4dd09)
 
 #### 2. How many unique customer orders were made?
 ```sql
 SELECT COUNT(DISTINCT order_id) AS 'unique_orders'
 FROM customer_orders_new;
 ```
-![image](https://github.com/shivin316/8_Week_SQL_Challenge/assets/122541994/1347a6cb-9732-47fe-aa51-8d27700e2bd6)
+![image](https://github.com/shivin316/8__Week_SQL_Challenge/assets/122541994/ed337e29-7cd4-497a-aa62-092a1ce92bf8)
 
 #### 3. How many successful orders were delivered by each runner?
 ```sql
@@ -20,7 +20,7 @@ WHERE r.cancellation IS NULL
 GROUP BY 1
 ORDER BY 1;
 ```
-![image](https://github.com/shivin316/8_Week_SQL_Challenge/assets/122541994/868ac54f-b154-4500-a719-673f57f389bf)
+![image](https://github.com/shivin316/8__Week_SQL_Challenge/assets/122541994/3f05cfee-3e7d-4ceb-9d6f-104a22df0422)
 
 #### 4. How many of each type of pizza was delivered?
 ```sql
@@ -31,7 +31,7 @@ WHERE r.cancellation IS NULL
 GROUP BY 1,2
 ORDER BY 1,2;
 ```
-![image](https://github.com/shivin316/8_Week_SQL_Challenge/assets/122541994/c5d6603f-11ef-49ef-b518-37ac514df018)
+![image](https://github.com/shivin316/8__Week_SQL_Challenge/assets/122541994/cdd3bf3d-85b8-4fa5-99b6-b1800f85dd73)
 
 #### 5. How many Vegetarian and Meatlovers were ordered by each customer?
 ```sql
@@ -40,7 +40,7 @@ FROM customer_orders_new c INNER JOIN pizza_names n ON c.pizza_id=n.pizza_id
 GROUP BY 1,2
 ORDER BY 1,2;
 ```
-![image](https://github.com/shivin316/8_Week_SQL_Challenge/assets/122541994/08fe3245-ebf3-498b-8c96-1dfd84ac3a71)
+![image](https://github.com/shivin316/8__Week_SQL_Challenge/assets/122541994/cc2b1ad4-aefa-4dfe-aaab-c5b390e3271d)
 
 #### 6. What was the maximum number of pizzas delivered in a single order?
 ```sql
@@ -49,7 +49,7 @@ FROM customer_orders_new c INNER JOIN pizza_names n ON c.pizza_id=n.pizza_id
 GROUP BY 1,2)
 SELECT DISTINCT pizza_name,Count FROM cte WHERE rk=1;
 ```
-![image](https://github.com/shivin316/8_Week_SQL_Challenge/assets/122541994/d6d79905-d709-4e84-9eef-9365eb4bcce7)
+![image](https://github.com/shivin316/8__Week_SQL_Challenge/assets/122541994/a8d0aa70-faff-4e25-a283-05ea85f536d1)
 
 #### 7. For each customer, how many delivered pizzas had at least 1 change and how many had no changes?
 ```sql
@@ -61,7 +61,7 @@ runner_orders_new r on c.order_id=r.order_id
 WHERE r.cancellation IS NULL 
 GROUP BY 1;
 ```
-![image](https://github.com/shivin316/8_Week_SQL_Challenge/assets/122541994/f1b7bbe6-b5e8-4776-835a-fbc553c64ad2)
+![image](https://github.com/shivin316/8__Week_SQL_Challenge/assets/122541994/bee6109c-43c2-4690-8051-015662ec7c7d)
 
 #### 8. How many pizzas were delivered that had both exclusions and extras?
 ```sql
@@ -70,7 +70,7 @@ FROM customer_orders_new c INNER JOIN
 runner_orders_new r on c.order_id=r.order_id 
 WHERE r.cancellation IS NULL AND c.exclusions IS NOT NULL AND c.extras IS NOT NULL;
 ```
-![image](https://github.com/shivin316/8_Week_SQL_Challenge/assets/122541994/64a48130-d9ff-4a65-b416-b613a79b8de3)
+![image](https://github.com/shivin316/8__Week_SQL_Challenge/assets/122541994/bec01365-4342-445b-94f7-a041a5f796d4)
 
 #### 9. What was the total volume of pizzas ordered for each hour of the day?
  ```sql
@@ -79,7 +79,7 @@ FROM customer_orders_new
 GROUP BY 1
 ORDER BY 1;
 ```
-![image](https://github.com/shivin316/8_Week_SQL_Challenge/assets/122541994/3a787a72-e002-4344-add8-085b9832ecaf)
+![image](https://github.com/shivin316/8__Week_SQL_Challenge/assets/122541994/7e39ca9e-d7d5-4cae-8aaf-52013b6214f0)
 
 #### 10. What was the volume of orders for each day of the week?
 ```sql
@@ -88,4 +88,5 @@ FROM customer_orders_new
 GROUP BY 1
 ORDER BY 1;
 ```
-![image](https://github.com/shivin316/8_Week_SQL_Challenge/assets/122541994/14ad168d-6518-421c-a1a1-419676b87aa4)
+![image](https://github.com/shivin316/8__Week_SQL_Challenge/assets/122541994/af15d643-f8cd-4224-9293-5386157a8d41)
+
