@@ -229,6 +229,7 @@ JOIN pizza_names pn ON c.pizza_id=pn.pizza_id
 ORDER BY 1;
 
 -- Q2. What was the most commonly added extra?
+-- SOLUTION -
 WITH cte AS
 (SELECT extras,DENSE_RANK()OVER(ORDER BY COUNT(extras) DESC) AS 'rk' FROM customer_orders_split  
 GROUP BY 1 HAVING extras IS NOT NULL)
@@ -236,14 +237,13 @@ SELECT topping_name FROM pizza_toppings
 WHERE topping_id = (SELECT extras FROM cte WHERE rk= 1);
 
 
--- Q3 What was the most common exclusion?
+--Q3. What was the most common exclusion?
+-- SOLUTION -
 WITH cte AS
 (SELECT exclusions,DENSE_RANK()OVER(ORDER BY COUNT(exclusions) DESC) AS 'rk' FROM customer_orders_split  
 GROUP BY 1)
 SELECT topping_name FROM pizza_toppings
 WHERE topping_id = (SELECT exclusions FROM cte WHERE rk= 1);
-
--- SELECT * FROM customer_orders_new
 
 
 -- Q4. Generate an order item for each record in the customers_orders table in the format of one of the following:
@@ -425,9 +425,4 @@ SELECT * FROM pizza_names;
 
 INSERT INTO pizza_recipes
 VALUES(3, (SELECT GROUP_CONCAT(topping_id SEPARATOR ', ') FROM pizza_toppings));
-
-SELECT * FROM pizza_recipes
-
-
-
-
+SELECT * FROM pizza_recipes;
