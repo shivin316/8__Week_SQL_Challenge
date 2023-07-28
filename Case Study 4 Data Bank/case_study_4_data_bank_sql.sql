@@ -140,8 +140,3 @@ FROM cte1)
 
 SELECT ROUND(100*COUNT(DISTINCT increase_by_5)/(SELECT COUNT(DISTINCT customer_id) FROM customer_transactions),2) AS 'customer_pct'
 FROM cte2 WHERE increase_by_5>5;
-
-
-
-
-
