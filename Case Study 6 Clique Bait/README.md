@@ -1,5 +1,5 @@
 <p align='center'>
-<img src= "https://github.com/shivin316/8_Week_SQL_Challenge/assets/122541994/b9116ed0-866b-4a58-ad80-652e3777330f" width ='500'>
+<img src= "https://github.com/shivin316/8__Week_SQL_Challenge/assets/122541994/82e8dbb4-a634-4e25-9c17-ac645bb1e330)" width ='500'>
 </p>
 
 
@@ -27,7 +27,9 @@ The sequence_number is used to order the events within each visit.
 
 <h1>Entity Relationship Diagram</h1>
 
-![image](https://github.com/shivin316/8_Week_SQL_Challenge/assets/122541994/ac96756c-21af-4e45-9e20-cd163491a4ee)
+![image](https://github.com/shivin316/8__Week_SQL_Challenge/assets/122541994/f7dda6da-4b62-4915-b3b0-3db5039f1c92)
+
+
 
 <h1>DBMS used</h1>
 
