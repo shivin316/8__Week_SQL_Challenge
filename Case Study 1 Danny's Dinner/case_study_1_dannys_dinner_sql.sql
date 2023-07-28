@@ -136,9 +136,3 @@ FROM cte WHERE member='Y')
 
 SELECT cte.customer_id,cte.order_date,cte.product_name,cte.price,cte.member,cte1.ranking 
 FROM cte LEFT JOIN cte1 on cte.customer_id=cte1.customer_id AND cte.rn=cte1.rn;
-
-
-
-
-
-
