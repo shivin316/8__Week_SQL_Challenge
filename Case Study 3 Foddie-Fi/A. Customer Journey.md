@@ -3,7 +3,7 @@
 SELECT * FROM details
 WHERE customer_id IN (1, 2, 11, 13, 15, 16, 18, 19);
 ```
-![image](https://github.com/shivin316/8_Week_SQL_Challenge/assets/122541994/d7d4dd3c-c994-482f-bc9f-9c1636e03591)
+![image](https://github.com/shivin316/8__Week_SQL_Challenge/assets/122541994/4e55c493-566a-45a8-a4b6-4a0b930927fc)
 
 - Client #1: upgraded to the basic monthly subscription within their 7 day trial period.
 
