@@ -30,5 +30,5 @@ Three key datasets for this case study
 
 <h1>DBMS used</h1>
 
-MYSQL 8.0
+MySQL 8.0
 
