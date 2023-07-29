@@ -33,4 +33,4 @@ This case study is all about calculating metrics, growth and helping the busines
 
 <h1>DBMS used</h1>
 
-MYSQL 8.0
+MySQL 8.0
