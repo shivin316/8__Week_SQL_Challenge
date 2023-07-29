@@ -8,6 +8,6 @@ Solutions to all the Case Studies for the #8WeekSQLChallenge created by Danny Ma
 
 Find the full case studies on https://8weeksqlchallenge.com/
 
-For case study 1 to case study 4 , I used MYSQL 8.0
+For case study 1 to case study 4 , I used MySQL 8.0
 
 For case study 5 to case study 8 , I used PostgreSQL 15.3
