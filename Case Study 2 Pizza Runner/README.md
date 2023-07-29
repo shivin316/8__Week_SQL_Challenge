@@ -53,4 +53,4 @@ Danny started by recruiting “runners” to deliver fresh pizza from Pizza Runn
 
 <h1>DBMS used</h1>
 
-MYSQL 8.0
+MySQL 8.0
