@@ -36,4 +36,4 @@ Sure, here's the rephrased version in bullet points:
 
 <h1>DBMS used</h1>
 
-MYSQL 8.0
+MySQL 8.0
