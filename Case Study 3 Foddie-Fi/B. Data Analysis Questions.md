@@ -1,4 +1,4 @@
-![image](https://github.com/shivin316/8__Week_SQL_Challenge/assets/122541994/fc005d22-5438-43e9-b2dc-dd17c69f2c02)#### 1. How many customers has Foodie-Fi ever had?
+#### 1. How many customers has Foodie-Fi ever had?
 ```sql
 SELECT COUNT(DISTINCT customer_id) AS 'total_customers'
 FROM details;
@@ -89,7 +89,8 @@ FROM details WHERE YEAR(start_date)='2020')
 SELECT COUNT(DISTINCT customer_id) AS 'annual_plan_count_2020' FROM cte 
 WHERE plan_name LIKE '%annual%' AND rk=1;
 ```
-![image](https://github.com/shivin316/8__Week_SQL_Challenge/assets/122541994/8553acdc-64db-4070-91aa-e0cfdbfafbfc)
+![image](https://github.com/shivin316/8__Week_SQL_Challenge/assets/122541994/a36cc7c5-eee8-4935-a377-a634f21dd829)
+
 
 
 #### 9. How many days on average does it take for a customer to an annual plan from the day they join Foodie-Fi?
@@ -100,7 +101,7 @@ FROM details
 WHERE plan_id = 0 OR plan_id=3)
 SELECT ROUND(AVG(days),1) AS 'average_days_to_annual_plan' FROM cte WHERE days IS NOT NULL;
 ```
-![image](https://github.com/shivin316/8__Week_SQL_Challenge/assets/122541994/3b3bcb36-98af-4501-b131-e4778ed9259a)
+![image](https://github.com/shivin316/8__Week_SQL_Challenge/assets/122541994/8553acdc-64db-4070-91aa-e0cfdbfafbfc)
 
 
 #### 10. Can you further breakdown this average value into 30 day periods (i.e. 0-30 days, 31-60 days etc)
